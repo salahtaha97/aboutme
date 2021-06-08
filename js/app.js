@@ -39,3 +39,33 @@ if (grYear === "yes" || grYear === "true") {
 } else {
     alert("I graduted at feb/2019")
 }
+
+let bnYear = prompt("Am I 24 years old??");
+if (bnYear === "yes" || bnYear === "true") {
+    alert("This correct")
+    console.log("correct")
+    answEr++
+} else {
+    alert("I was born in 1997")
+}
+
+let favNub = prompt("enter correct number");
+let favNamn = [ 1,2,3];
+for(i = 0; i < 4; i++){
+    if (favNamn === 1 || favNamn === 2 || favNamn === 3 ) {
+        
+    } else{
+        favNub = prompt("please try again")
+    }
+}
+
+
+let aBc = ['football', 'basketball', 'f1', 'tennies'];
+let answerBu = prompt('What is my favourite sport? ' + aBc).toLowerCase();
+while (answerBu !== "football")
+    answEr++
+    {
+    answerBu = prompt("try agian")
+}
+alert(answEr++)
+alert("thank you "+ myName)

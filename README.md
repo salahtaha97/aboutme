@@ -1,2 +1,3 @@
 # aboutme
-personal info.
+add new elements, loops, condtions.
+

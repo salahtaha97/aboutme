@@ -1,59 +1,31 @@
-let answEr = 0
-let userName = prompt("What is your name?");
-console.log(userName);
-alert("welcome " + userName);
+"use strict";
 
-let myName = prompt("Is my name salah?");
-console.log(myName);
-if (myName === "yes" && "true") {
-    alert("This corect")
-    console.log("correct")
-    answEr++
-} else {
-    alert("it is salah")
+let userName = prompt("what is your name?");
+alert("welcome "+ userName)
+
+function answerQustion(qustion,yesAnswer,noAnswer){
+    let answerAb;
+    do {
+       answerAb = prompt(qustion) 
+    } while (answerAb !== "yes" && answerAb !== "no"  && answerAb !== "y"  && answerAb !== "n"  );
+    if(answerAb === "yes" || answerAb === "y" ){
+        answEr++
+    }else{
+    }
 }
 
-let uniStudy = prompt(" did I study at hashimate university?");
-if (uniStudy === "yes" || uniStudy === "true") {
-    alert("This correct")
-    console.log("correct")
-    answEr++
-} else {
-    alert("I was stuidied at it.")
-}
-
-let jobExp = prompt("Did i work as a customer service previsoly?")
-if (jobExp === "yes" || jobExp === "true") {
-    alert("This correct")
-    console.log("correct")
-    answEr++
-} else {
-    alert("I worked as customer service for 6 months")
-}
-
-let grYear = prompt("Is 2019 my graduation year??");
-if (grYear === "yes" || grYear === "true") {
-    alert("This correct")
-    console.log("correct")
-    answEr++
-} else {
-    alert("I graduted at feb/2019")
-}
-
-let bnYear = prompt("Am I 24 years old??");
-if (bnYear === "yes" || bnYear === "true") {
-    alert("This correct")
-    console.log("correct")
-    answEr++
-} else {
-    alert("I was born in 1997")
-}
+answerQustion("Is my name salah?","corect","notcorect");
+answerQustion("did I study at hashimate university?","corect","notcorect");
+answerQustion("Did i work as a customer service previsoly?","corect","notcorect");
+answerQustion("Am I 24 years old??","corect","notcorect");
+answerQustion("Is 2019 my graduation year?","corect","notcorect");
 
 let favNub = prompt("enter correct number");
 let favNamn = [ 1,2,3];
 for(i = 0; i < 4; i++){
     if (favNamn === 1 || favNamn === 2 || favNamn === 3 ) {
-        
+        answEr++
+
     } else{
         favNub = prompt("please try again")
     }
@@ -68,22 +40,6 @@ while (answerBu !== "football")
     answerBu = prompt("try agian")
 }
 alert(answEr++)
-alert("thank you "+ myName)
+alert("good by "+ userName)
 
-function answerQustion(qustion,yesAnswer,noAnswer){
-    let answerAb;
-    do {
-       answerAb = prompt(qustion) 
-    } while (answerAb !== "yes" && answerAb !== "no"  && answerAb !== "y"  && answerAb !== "n"  );
-    if(answerAb === "yes" || answerAb === "y" ){
-        console.log(yesAnswer);
-    }else{
-        console.log(noAnswer);
-    }
-}
 
-answerQustion("Is my name salah?","corect","notcorect");
-answerQustion("did I study at hashimate university?","corect","notcorect");
-answerQustion("Did i work as a customer service previsoly?","corect","notcorect");
-answerQustion("Am I 24 years old??","corect","notcorect");
-answerQustion("Is 2019 my graduation year??","corect","notcorect");

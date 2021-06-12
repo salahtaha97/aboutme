@@ -69,3 +69,21 @@ while (answerBu !== "football")
 }
 alert(answEr++)
 alert("thank you "+ myName)
+
+function answerQustion(qustion,yesAnswer,noAnswer){
+    let answerAb;
+    do {
+       answerAb = prompt(qustion) 
+    } while (answerAb !== "yes" && answerAb !== "no"  && answerAb !== "y"  && answerAb !== "n"  );
+    if(answerAb === "yes" || answerAb === "y" ){
+        console.log(yesAnswer);
+    }else{
+        console.log(noAnswer);
+    }
+}
+
+answerQustion("Is my name salah?","corect","notcorect");
+answerQustion("did I study at hashimate university?","corect","notcorect");
+answerQustion("Did i work as a customer service previsoly?","corect","notcorect");
+answerQustion("Am I 24 years old??","corect","notcorect");
+answerQustion("Is 2019 my graduation year??","corect","notcorect");

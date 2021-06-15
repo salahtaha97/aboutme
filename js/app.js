@@ -1,24 +1,49 @@
 "use strict";
 
+let answEr = 0
+
 let userName = prompt("what is your name?");
 alert("welcome "+ userName)
 
-function answerQustion(qustion,yesAnswer,noAnswer){
-    let answerAb;
-    do {
-       answerAb = prompt(qustion) 
-    } while (answerAb !== "yes" && answerAb !== "no"  && answerAb !== "y"  && answerAb !== "n"  );
-    if(answerAb === "yes" || answerAb === "y" ){
-        answEr++
-    }else{
-    }
+let myName = prompt("Is salah my name?").toLowerCase;
+if(myName === "yes" || myName === "y" ){
+    alert("it is correct")
+    answEr++
+}else{
+    alert("yes salah is my name")
 }
 
-answerQustion("Is my name salah?","corect","notcorect");
-answerQustion("did I study at hashimate university?","corect","notcorect");
-answerQustion("Did i work as a customer service previsoly?","corect","notcorect");
-answerQustion("Am I 24 years old??","corect","notcorect");
-answerQustion("Is 2019 my graduation year?","corect","notcorect");
+let myAge = prompt("Am I 24 years old ?").toLowerCase;
+if(myAge === "yes" || myAge === "y" ){
+    alert("it is correct")
+    answEr++
+}else{
+    alert("no i was 24 years")
+}
+
+let myUni = prompt("did I study at hashimate university?").toLowerCase;
+if(myUni === "yes" || myUni === "y" ){
+    alert("it is correct")
+    answEr++
+}else{
+    alert("it is hashimete university")
+}
+
+let myGrad = prompt("Is 2019 my graduation year ?").toLowerCase;
+if(myGrad === "yes" || myGrad === "y" ){
+    alert("it is correct")
+    answEr++
+}else{
+    alert("i was graduted at 2019 in jun")
+}
+
+let myExp = prompt("Did i work as a customer service previsoly?").toLowerCase;
+if(myExp === "yes" || myExp === "y" ){
+    alert("it is correct")
+    answEr++
+}else{
+    alert("not correct")
+}
 
 let favNub = prompt("enter correct number");
 let favNamn = [ 1,2,3];
@@ -41,5 +66,3 @@ while (answerBu !== "football")
 }
 alert(answEr++)
 alert("good by "+ userName)
-
-
